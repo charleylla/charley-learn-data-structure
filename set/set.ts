@@ -129,17 +129,3 @@ class MySet<T> implements IMySet<T>{
         return res;
     }
 }
-
-const set1 = new MySet<string>();
-const set2 = new MySet<string>();
-
-set1.add("A")
-set1.add("B")
-set1.add("C")
-set1.add("D")
-
-set2.add("A")
-set2.add("B")
-set2.add("C")
-set2.add("D")
-set2.add("E")

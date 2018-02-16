@@ -73,12 +73,3 @@ class PriorityQueue<T> implements IPriorityQueue<T>{
         return this.dataStore;
     }
 }
-
-const queue = new PriorityQueue<string>()
-queue.enqueue(new QueueElement("MIKE",2));
-queue.enqueue(new QueueElement("JACK",4));
-queue.enqueue(new QueueElement("MARRY",1));
-queue.enqueue(new QueueElement("PENNY",3));
-for(let i = 0,len = queue.size();i < len; i ++){
-    console.log(queue.dequeue())
-}

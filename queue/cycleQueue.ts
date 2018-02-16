@@ -58,13 +58,3 @@ class CycleQueue<T> implements ICycleQueue<T>{
         return this.dataStore;
     }
 }
-
-const queue = new CycleQueue<string>();
-queue.enqueue("A")
-queue.enqueue("B")
-queue.enqueue("C")
-queue.enqueue("D")
-setInterval(()=>{
-    queue.dequeue();
-    console.log(queue.toString())
-},1000);
