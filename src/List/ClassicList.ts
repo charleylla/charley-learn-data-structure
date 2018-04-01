@@ -26,7 +26,7 @@ export class ClassicList<T> implements IList<T>{
     remove(index:number):T{
         const indexUsable:boolean = this.checkIndex(index);
         if(!indexUsable){
-            const msg = `Index out of bounds:cannot remove element at index ${index}`;
+            const msg:string = `Index out of bounds:cannot remove element at index ${index}`;
             this.error(msg);
         }
         const ele:T = this.get(index);
